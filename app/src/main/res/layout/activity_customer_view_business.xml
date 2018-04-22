@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+
+    <ImageButton
+        android:id="@+id/homeBTN"
+        android:layout_width="56dp"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="15dp"
+        android:background="#33000000"
+        android:backgroundTint="#33000000"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/signupBTN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userTypeGroup"
+        app:srcCompat="?android:attr/homeAsUpIndicator" />
+
+    <ImageButton
+        android:id="@+id/checkoutBTN"
+        android:layout_width="45dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/homeBTN"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/checkouticon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/signupBTN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userTypeGroup" />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/emailBTN"
+        android:layout_centerHorizontal="true"
+        android:background="#99000000"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Loading..."
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/phoneBTN"
+        android:layout_width="192dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/map"
+        android:background="#F47A3E"
+        android:src="@android:drawable/stat_sys_phone_call"/>
+
+    <ImageButton
+        android:id="@+id/emailBTN"
+        android:layout_width="192dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/map"
+        android:adjustViewBounds="true"
+        android:background="#E36527"
+        android:src="@android:drawable/ic_dialog_email" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/phoneBTN"
+        android:background="#FAFAFA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBTN" />
+
+</RelativeLayout>

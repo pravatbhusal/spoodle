@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signupbackground"
+    tools:context="com.shadowsych.spoodle.SignupActivity">
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="114dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/emailText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/passwordText"
+        app:layout_constraintStart_toStartOf="@+id/nameText"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/userTypeGroup"
+        app:layout_constraintStart_toStartOf="@+id/emailText"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+    <RadioGroup
+        android:id="@+id/userTypeGroup"
+        android:layout_width="216dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="74dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText">
+
+        <RadioButton
+            android:id="@+id/customerType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:buttonTint="@android:color/holo_orange_dark"
+            android:text="Customer"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/holo_orange_dark" />
+
+        <RadioButton
+            android:id="@+id/businessType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:buttonTint="@android:color/holo_orange_dark"
+            android:text="Business"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/holo_orange_dark" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/signupBTN"
+        android:layout_width="158dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Sign Up"
+        android:textColor="@android:color/white"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/termsType"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintStart_toEndOf="@+id/homeBTN" />
+
+    <ImageButton
+        android:id="@+id/homeBTN"
+        android:layout_width="56dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="58dp"
+        android:layout_marginStart="36dp"
+        android:background="@android:color/holo_orange_dark"
+        android:tint="@android:color/white"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userTypeGroup"
+        app:srcCompat="?android:attr/homeAsUpIndicator" />
+
+    <RadioButton
+        android:id="@+id/termsType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="I agree with the terms of service."
+        android:textColor="@android:color/white"
+        android:textColorLink="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@+id/signupBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userTypeGroup" />
+
+</android.support.constraint.ConstraintLayout>

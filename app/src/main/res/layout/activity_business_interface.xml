@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/businessImage"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/cameraImage"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/analyticsBTN"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <ImageButton
+        android:id="@+id/buyPromotionBTN"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/timeText"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/advertisementicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/signupBTN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userTypeGroup" />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/emailBTN"
+        android:layout_centerHorizontal="true"
+        android:background="#99000000"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Loading..."
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/phoneBTN"
+        android:layout_width="192dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/businessImage"
+        android:background="#F47A3E"
+        android:src="@android:drawable/stat_sys_phone_call"/>
+
+    <ImageButton
+        android:id="@+id/emailBTN"
+        android:layout_width="192dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/businessImage"
+        android:adjustViewBounds="true"
+        android:background="#E36527"
+        android:src="@android:drawable/ic_dialog_email" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/phoneBTN"
+        android:layout_above="@+id/addCategoryBTN"
+        android:background="#FAFAFA" />
+
+    <ImageButton
+        android:id="@+id/analyticsBTN"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/buyPromotionBTN"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/analytics" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="250dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:background="#99000000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Time"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/addCategoryBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Add New Category"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

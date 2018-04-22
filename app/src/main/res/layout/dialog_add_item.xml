@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/cancelCartBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/addCartBTN"
+        android:background="@android:color/darker_gray"
+        android:text="Cancel"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="Loading..."
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <NumberPicker
+        android:id="@+id/quantityPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:width="100dip"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/addCartBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/externalitiesText"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Add To Cart"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/quantityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/quantityPicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-74dp"
+        android:text="Quantity" />
+
+    <TextView
+        android:id="@+id/externalitiesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="264dp"
+        android:text="Externalities:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/externalitiesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/externalitiesTitle"
+        android:layout_centerHorizontal="true"
+        android:text="Loading..." />
+
+</RelativeLayout>

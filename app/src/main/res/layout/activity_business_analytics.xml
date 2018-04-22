@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/bargraphLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bargraph"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/homeBTN"
+        android:layout_width="56dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_orange_dark"
+        android:tint="@android:color/white"
+        app:srcCompat="?android:attr/homeAsUpIndicator" />
+
+    <TextView
+        android:id="@+id/outputInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bargraphLayout"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:text="Suggested Change in Output"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/outputChangeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/homeBTN"
+        android:layout_centerHorizontal="true"
+        android:text="0%"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="24sp" />
+
+</RelativeLayout>
