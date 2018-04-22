@@ -1,3 +1,7 @@
+<img src="https://raw.githubusercontent.com/Shadowsych/spoodle/master/app/src/main/res/drawable/ic_launcher.png" width="100" height="100" />
+
+### DevPost: https://devpost.com/software/spoodle
+
 # Spoodle
 Spoodle is a mobile app for people and restaurant owners to sell their leftover food to people at a discounted price, and donate the rest to homeless shelters, students, etc. Using a real-time marketplace for leftover food, restaurants can show what extra food they have and sell a discounted price in order to bring in extra cash rather than just throwing the food away. Spoodlers would have access to viewing all the discounted menu items throughout areas or a desired restaurant, which allows them to select cheaper food quicker and smarter than before. Additionally, by partnering with homeless shelters in the future, this would allow for food leftovers to be picked up by them to implement a zero-waste community. Basically, companies make money, students and homeless shelters save money, and the Earth gets cleaner.
 
