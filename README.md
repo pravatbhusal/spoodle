@@ -7,7 +7,7 @@ Spoodle is a mobile app for people and restaurant owners to sell their leftover 
 # Developers
 - Pravat Bhusal (Java Client-side Developer)
 - Rohith Rajashekarbabu (PHP & MySQL Server-side Developer)
-- Michael Kasman (Team Coordinator)
+- Michael Kasman (MySQL Developer & Product Manager)
 - Mostafa Amir (Graphics Designer)
 - Hrishikesh Rajashekarbabu (Android Studio Designer)
 
