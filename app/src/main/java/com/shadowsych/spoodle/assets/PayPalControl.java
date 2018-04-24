@@ -26,7 +26,7 @@ import java.util.Map;
 public class PayPalControl {
 
     //paypal settings (NOTE: make sure to change the environment and client_id when in production)
-    private final String PAYPAL_CLIENT_ID = "AW0QkRi8B__Prrlvpb12E-upfQBzrrs0FjSWTzFjKBJFBD3qksaU43cUleT4gpOifKDnYLrFld69Divp";
+    private final String PAYPAL_CLIENT_ID = "CLIENT_ID_HERE";
     public static final int PAYPAL_REQUEST_CODE = 7171;
     private PayPalConfiguration config = new PayPalConfiguration()
             .environment(PayPalConfiguration.ENVIRONMENT_SANDBOX)
