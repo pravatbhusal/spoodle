@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Shadowsych/spoodle/master/app/src/main/res/drawable/ic_launcher.png" width="100" height="100" />
+<img src="https://raw.githubusercontent.com/pb24578/spoodle/master/app/src/main/res/drawable/ic_launcher.png" width="100" height="100" />
 
 ### DevPost: https://devpost.com/software/spoodle
 
